@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Api Ejemplo Taller de Programacion</title>
+    <link rel="stylesheet" href="Stiles.css">
+</head>
+<body>
+    <h1>Api Ejemplo Taller de Programacion</h1>
+    <h2>Convertir Texto a Imagen QR</h2>
+    <form id="QR"  >
+        <label for="texto">Escribir Texto</label>
+        <input id="texto" name="texto" type="text" placeholder="Ingresa el texto" onkeydown="if(event.key === 'Enter'){convertir();}">
+
+        <button id="submit" type="submit" >Convertir</button>
+
+    </form>
+    <h2>Resultado de la conversión:</h2>
+    <img id="img1" src="" >
+    <p id="resultado"></p>
+    <script src="script.js"></script>
+</body>
+</html>
